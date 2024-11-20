@@ -1,0 +1,35 @@
+/* Sidebar.css */
+
+.sidebar {
+    position: fixed;
+    top: 25%;
+    left: 3vw;
+    width: 4vw;
+    /* transform: translateY(-50%); */
+    background-color: #2d6b47;
+    border-radius: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+    gap: 6vh;
+}
+
+.icon{
+    font-size: 4vh;
+}
+
+.sidebar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; /* Adjust icon size */
+    color: #fdfdfd; /* Default white color */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sidebar-icon.active {
+    background-color: #cb6e17; /* Orange for the active icon */
+}

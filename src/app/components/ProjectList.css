@@ -1,0 +1,94 @@
+/* General Styles */
+.projects-section {
+    font-family: "Arial", sans-serif;
+    padding: 7rem 5rem 5rem 12rem;
+    color: #333;
+    /* height: 600px; */
+    /* background-color: #89b6a4; */
+    /* display: flex; */
+  }
+  .section-header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2vw;
+  }
+  
+  .section-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+
+/* justify-content: flex-end; */
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    /* font-weight: bold; */
+ 
+  }
+  
+  /* Cards Layout */
+  .project-cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+/* background-color: red; */
+justify-content: center;
+
+  }
+  
+  .project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 350px; /* Set a fixed height */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header (Title and Link) */
+  .project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    color: #cb6e17;
+  }
+  
+  .project-link {
+    text-decoration: none;
+    color: #014d30; /* Green color for link */
+    font-size: 1.5rem;
+  }
+  
+  /* Description */
+  .project-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    overflow-y: auto;
+    padding-right: 10px; /* Add space for scrollbar */  
+  }
+
+  /* Hide the scrollbar for all browsers */
+.project-description::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
+  .project-description {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+  }
+  

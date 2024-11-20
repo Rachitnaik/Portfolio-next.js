@@ -1,0 +1,11 @@
+
+.imagecss {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+.pageNumber {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+}
