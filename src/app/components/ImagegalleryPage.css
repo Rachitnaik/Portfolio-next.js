@@ -1,11 +1,10 @@
 
-.imagecss {
-    height: 100%;
-    width: 100%;
-    /* background-color: red; */
-}
-.pageNumber {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: right;
+
+
+.marquee-image {
+
+    height: 45vh;
+    padding: 1rem;
+    border-radius: 10px; /* Optional rounded corners */
+    opacity: 100;
 }

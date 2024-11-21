@@ -29,13 +29,14 @@
 .textSection {
     flex: 2;
     /* padding-left: 2rem; */
-    /* background-color: red; */
+    background-color: red;
 }
 
 .pageNumber {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     text-align: right;
+    margin-right:7rem;
 }
 
 .heading {
