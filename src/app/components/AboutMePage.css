@@ -1,0 +1,112 @@
+/* Main container styling */
+.secondPage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+ 
+    padding: 7vw 3vw 8vw 0vw;
+
+
+}
+
+/* Image section styling */
+.imageSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 12rem;
+
+}
+
+.profileImage {
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 21vw;
+    /* background-color: orange; */
+}
+
+/* Text section styling */
+.textSection {
+    flex: 2;
+}
+
+.pageNumber {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: right;
+    margin-right:6rem;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    
+}
+
+@media screen and (min-width: 1800px) {
+    .secondPage {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        /* padding: 4rem; */
+        padding: 7rem 3rem 5rem 0rem;
+    
+    }
+    
+    /* Image section styling */
+    .imageSection {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin-left: 12rem;
+    /* background-color: aqua; */
+    }
+    
+    .profileImage {
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 20rem;
+        /* background-color: orange; */
+    }
+    
+    /* Text section styling */
+    .textSection {
+        flex: 2;
+        /* padding-left: 2rem; */
+        /* background-color: red; */
+    }
+    
+    .pageNumber {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: right;
+    }
+    
+    .heading {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        margin-left: 5rem;
+    
+    }
+    
+    .description {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 2rem;
+        margin-left: 5rem;
+        
+    }
+}

@@ -1,5 +1,7 @@
 import React from "react";
 import "./ProjectList.css";
+import "../globals.css";
+
 
 const projects = [
     {
@@ -25,14 +27,14 @@ const projects = [
 const ProjectListPage: React.FC = () => {
     return (
         <div className="projects-section">
-            <div className="section-header">
+            <div className="section-header poppins ">
                 <h2 className="section-number">02</h2>
-                <h2 className="section-title">Projects</h2>
+                <h2 className="section-title ">Projects</h2>
             </div>
             <div className="project-cards-container">
                 {projects.map((project, index) => (
                     <div className="project-card" key={index}>
-                        <div className="project-header">
+                        <div className="project-header poppins">
                             <h3 className="project-title">{project.title}</h3>
                             <a href={project.link}
                                 target="_blank"
@@ -41,7 +43,7 @@ const ProjectListPage: React.FC = () => {
                                 ➚
                             </a>
                         </div>
-                        <p className="project-description">{project.description}</p>
+                        <p className="project-description poppins">{project.description}</p>
                     </div>
                 ))}
             </div>

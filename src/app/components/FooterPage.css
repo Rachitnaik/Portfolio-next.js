@@ -1,0 +1,38 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 18vw 10vw 8vw 10vw;
+
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align text to bottom */
+    align-items: flex-start; /* Align text to left */
+
+    margin-left: 3vw;
+
+}
+
+.footer-icons-wrapper {
+    position: relative;
+    bottom: 10vw; /* Move the div upwards */
+    padding: 1rem;
+    gap:10vw
+}
+
+.footer-number {
+    font-size: 2rem; /* Adjust size as needed */
+    margin-top: 7vw;
+}
+
+.footer-title {
+    font-size: 4rem; /* Adjust size as needed */
+}
+
+.footer-icon{
+    font-size: 10vw;
+}
+

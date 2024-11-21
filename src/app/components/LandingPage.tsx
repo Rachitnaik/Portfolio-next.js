@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import "../globals.css";
-import "./FirstPage.css"; // Import the external CSS file
+import "./LandingPage.css"; // Import the external CSS file
 
 const LandingPage: React.FC = () => {
     return (

@@ -1,7 +1,7 @@
 /* General Styles */
 .projects-section {
     font-family: "Arial", sans-serif;
-    padding: 7rem 5rem 5rem 12rem;
+    padding: 7vw 5vw 5vw 7vw;
     color: #333;
     /* height: 600px; */
     /* background-color: #89b6a4; */
@@ -10,9 +10,10 @@
   .section-header{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 2vw;
-    background-color: red;
+    padding: 0vw 5vw 2vw 7vw;
+    /* background-color: red; */
     align-items: center;
+
   }
   
   .section-number {

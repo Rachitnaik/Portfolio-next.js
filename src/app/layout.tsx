@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Satisfy } from 'next/font/google'
+import { Satisfy, Poppins } from 'next/font/google'
 import "./globals.css";
 
 const geistSans = localFont({
@@ -20,6 +20,12 @@ const satisfy_font = Satisfy({
   // display: 'swap',
   variable: '--font-satisfy',
 })
+const poppins_font = Poppins({
+  weight: '400',
+  subsets: ['latin'],
+  // display: 'swap',
+  variable: '--font-poppins',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -34,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${satisfy_font.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${satisfy_font.variable} ${poppins_font.variable} antialiased`}
       >
         {children}
       </body>
