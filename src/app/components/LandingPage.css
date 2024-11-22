@@ -14,10 +14,7 @@
 
 /* Text section styling */
 .nameSection {
-    /* flex: 1; */
-    /* padding-right: 2rem; */
-    /* border: 2px solid; */
-    /* background-color: red; */
+ 
 }
 
 .nameSection h1 {
@@ -36,21 +33,15 @@
 }
 
 /* Image section styling */
-.imageCss {
-    /* padding: 10vw; */
-    /* flex: 1; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* border: 2px solid; */
-    /* margin-left: 74px; */
-    /* margin-right: 1rem; */
-
-}
 
 @media screen and (min-width: 1800px) {
     .mainDiv {
-gap:18vw;
-padding: 5rem 2rem 10rem 0rem;
+        gap:19vw;
+        padding: 5rem 2rem 10rem 0rem;
 
     }
+    .imageCss {
+margin-left: 10vw;
+    }
+    
   }

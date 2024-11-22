@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 5vw 3vw 8vw 0vw;
+    padding: 3vw 3vw 8vw 0vw;
 }
 
 .image-gallery-header {
@@ -17,8 +17,11 @@
     font-size: 2rem;
     padding-left: 3vw;
 }
+
  .more{
 padding-top: 2vw;
+font-size: 1.7rem;
+
 
  }
 
@@ -34,3 +37,24 @@ padding-top: 2vw;
     border-radius: 10px; 
     opacity: 100;
 }
+
+
+
+@media screen and (min-width: 1800px) {
+  .image-gallery-container {
+    padding: 3vw 3vw 0vw 0vw;
+
+}
+  .imageTitle{
+    font-size: 4rem;
+  }
+  .imagepagenumber{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .more{
+    padding-top: 7vw;
+    font-size: 3rem;
+    
+     }
+  }

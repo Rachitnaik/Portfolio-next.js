@@ -18,21 +18,37 @@
 
 .footer-icons-wrapper {
     position: relative;
-    bottom: 10vw; /* Move the div upwards */
+    bottom: 10vw; 
     padding: 1rem;
     gap:10vw
 }
 
 .footer-number {
-    font-size: 2rem; /* Adjust size as needed */
+    font-size: 2rem; 
     margin-top: 7vw;
 }
 
 .footer-title {
-    font-size: 4rem; /* Adjust size as needed */
+    font-size: 4rem; 
 }
 
 .footer-icon{
     font-size: 10vw;
 }
 
+
+@media screen and (min-width: 1800px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 20vw 10vw 0vw 10vw;
+        margin-bottom: 14vw;
+    
+    }
+    .footer-text {
+    font-size: 4rem;
+    
+    }
+    
+  }

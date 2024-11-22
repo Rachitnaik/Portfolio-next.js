@@ -3,15 +3,12 @@
     font-family: "Arial", sans-serif;
     padding: 7vw 5vw 5vw 7vw;
     color: #333;
-    /* height: 600px; */
-    /* background-color: #89b6a4; */
-    /* display: flex; */
   }
   .section-header{
     display: flex;
     justify-content: space-between;
     padding: 0vw 5vw 2vw 7vw;
-    /* background-color: red; */
+   
     align-items: center;
 
   }
@@ -19,29 +16,25 @@
   .section-number {
     font-size: 1.5rem;
     font-weight: bold;
-    
-
-/* justify-content: flex-end; */
   }
   
   .section-title {
     font-size: 2rem;
-    /* font-weight: bold; */
- 
+
   }
   
   /* Cards Layout */
   .project-cards-container {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+
 /* background-color: red; */
 justify-content: center;
 
   }
   
   .project-card {
-    background: #fff;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -49,8 +42,8 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 350px; /* Set a fixed height */
-    overflow: hidden; /* Hide overflowing content */
+    height: 29vw; /* Set a fixed height */
+    overflow: hidden; 
   }
   
   .project-card:hover {
@@ -83,7 +76,6 @@ justify-content: center;
     color: #555;
     line-height: 1.5;
     overflow-y: auto;
-    padding-right: 10px; /* Add space for scrollbar */  
   }
 
   /* Hide the scrollbar for all browsers */
@@ -95,3 +87,40 @@ justify-content: center;
     -ms-overflow-style: none; /* For Internet Explorer 10+ */
   }
   
+
+
+  @media screen and (min-width: 1800px) {
+    .projects-section {
+      font-family: "Arial", sans-serif;
+      color: #333;
+      padding: 8vw 0vw 15vw 0vw;
+  
+    }
+
+    .project-card {
+      height: 25vw; 
+    }
+    .project-description {
+      font-size: 1.4rem;
+      color: #555;
+      line-height: 1.5;
+      overflow-y: auto;
+    }
+    .section-header{
+      display: flex;
+      justify-content: space-between;
+      padding: 0vw 8vw 2vw 13vw;
+      align-items: center;
+  
+    }
+    
+    .section-number {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    
+    .section-title {
+      font-size: 4rem;
+  
+    }
+  }

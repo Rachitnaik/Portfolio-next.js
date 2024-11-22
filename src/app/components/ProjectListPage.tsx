@@ -7,21 +7,23 @@ const projects = [
     {
         title: "AniView",
         description:
-            "Luxe Jewels, a high-end jewelry retailer, desired a brand identity that exuded luxury and sophistication. We developed an elegant logo with a custom typeface and a refined color palette, capturing the essence of timeless beauty.",
-        link: "#",
+            "A reviewing web application for Anime and Manga, a group mini project done during my university days , using react, react-boostrap, firestore for database. Was mainly involved in creating UI screens and basic "
+        ,
+        link: "http://aniview.onrender.com",
     },
     {
-        title: "AniView",
+        title: "Anime/MangaUI",
         description:
-            "Luxe Jewels, a high-end jewelry retailer, desired a brand identity that exuded luxury and sophistication. We developed an elegant logo with a custom typeface and a refined color palette, capturing the essence of timeless beauty, hasdsalbcjsacjsabchdbchdbchdcbhdbchdbchdbchdbchdcbdhcbdhcbhdbchdbcsi am gonna hold you just for a while and die witha a smile , if the world was ending i am gonna be next to you , i am ginna be next to you, lost in thre words that we soeak i dont wanan di thuis anymore , you alread, wherever you go thast weer i follow , nobody promised tmrewwif the world was falling i am gonna next to you oooojhhhhh, if the arty was over and iur time in eath was thriugh , i am ginna hod wa;ahfldsahfkjdsahflkjdsahfsalkfjsaj;nljnv;renjewnfkjenfbin",
-        link: "#",
+            "A UI made by following a design from the Internet, during my internship as a part of my learning phase using react, typescript, material UI, used an online free api to display data.",
+        link: "https://github.com/Rachitnaik/AnimeUI",
     },
     {
-        title: "AniView",
+        title: "Movify-React App",
         description:
-            "Luxe Jewels, a high-end jewelry retailer, desired a brand identity that exuded luxury and sophistication. We developed an elegant logo with a custom typeface and a refined color palette, capturing the essence of timeless beauty, hasdsalbcjsacjsabchdbchdbchdcbhdbchdbchdbchdbchdcbdhcbdhcbhdbchdbcsi am gonna hold you just for a while and die witha a smile , if the world was ending i am gonna be next to you , i am ginna be next to you, lost in thre words that we soeak i dont wanan di thuis anymore , you alread, wherever you go thast weer i follow , nobody promised tmrewwif the world was falling i am gonna next to you oooojhhhhh, if the arty was over and iur time in eath was thriugh , i am ginna hod wa;ahfldsahfkjdsahflkjdsahfsalkfjsaj;nljnv;renjewnfkjenfbin",
-        link: "https://www.google.com",
+            "A basic react application done to understand the flow of a full stack application, during my internship period using MERN stack ",
+        link: "https://github.com/Rachitnaik/Moviefy",
     },
+
 ];
 
 const ProjectListPage: React.FC = () => {

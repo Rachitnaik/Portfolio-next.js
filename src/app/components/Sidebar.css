@@ -30,6 +30,12 @@
     transition: color 0.3s ease;
 }
 
-.sidebar-icon.active {
-    background-color: #cb6e17; 
+
+
+.icon.active {
+    color: orange; /* Highlight the active section */
 }
+
+@media screen and (min-width: 1800px) {
+ 
+  }

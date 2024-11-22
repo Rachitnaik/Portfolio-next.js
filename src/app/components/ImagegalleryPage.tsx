@@ -7,8 +7,8 @@ const ImagegalleryPage: React.FC = () => {
     return (
         <div className="image-gallery-container">
             <div className="image-gallery-header poppins">
-                <h1>Illustration gallery</h1>
-                <h1>03</h1>
+                <h1 className="imageTitle">Illustration gallery</h1>
+                <h1 className="imagepagenumber">03</h1>
             </div>
             <div className="image-gallery-marquee">
                 <Marquee speed={120} autoFill={true} pauseOnClick={true} pauseOnHover={true}>
@@ -40,7 +40,7 @@ const ImagegalleryPage: React.FC = () => {
                 </Marquee>
             </div>
             <a className="poppins more"
-                href="https://github.com"
+                href="https://rachitgaunkar.wixsite.com/rgillustrations"
                 target="_blank"
                 rel="noopener noreferrer"> See More ➚</a>
         </div>

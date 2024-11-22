@@ -6,13 +6,11 @@ import AboutMePage from './components/AboutMePage'
 import ImagegalleryPage from "./components/ImagegalleryPage";
 import ProjectListPage from "./components/ProjectListPage";
 import FooterPage from "./components/FooterPage";
-import InstagramIcon from '@mui/icons-material/Instagram';
 import HomeIcon from '@mui/icons-material/Home';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import PaletteIcon from '@mui/icons-material/Palette';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
-
 
 function Pages() {
   const [activeSection, setActiveSection] = useState("first");
@@ -20,8 +18,42 @@ function Pages() {
   const secondRef = useRef<HTMLDivElement>(null);
   const imageGalleryRef = useRef<HTMLDivElement>(null);
   const projectListRef = useRef<HTMLDivElement>(null);
-  const footerPage = useRef<HTMLDivElement>(null);
+  const footerRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    const options = {
+      root: null, // Observe within the viewport
+      rootMargin: "0px",
+      threshold: 0.5, // Trigger when 50% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          setActiveSection(id); // Update the active section
+        }
+      });
+    }, options);
+
+    const sections = [
+      firstRef.current,
+      secondRef.current,
+      imageGalleryRef.current,
+      projectListRef.current,
+      footerRef.current,
+    ].filter(Boolean); // Filter out null values
+
+    sections.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        if (section) observer.unobserve(section);
+      });
+    };
+  }, []);
 
   const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement>) => {
     if (sectionRef.current) {
@@ -36,7 +68,7 @@ function Pages() {
     <div>
       <div className="sidebar">
         <a
-          className={`icon ${activeSection === "first" ? "active" : ""}`}
+          className={`icon ${activeSection === "landingPage" ? "active" : ""}`}
           onClick={(e) => {
             e.preventDefault();
             scrollToSection(firstRef);
@@ -45,7 +77,7 @@ function Pages() {
           <HomeIcon />
         </a>
         <a
-          className={`icon ${activeSection === "second" ? "active" : ""}`}
+          className={`icon ${activeSection === "aboutMePage" ? "active" : ""}`}
           onClick={(e) => {
             e.preventDefault();
             scrollToSection(secondRef);
@@ -53,9 +85,8 @@ function Pages() {
         >
           <AccountCircleIcon />
         </a>
-
         <a
-          className={`icon ${activeSection === "fourth" ? "active" : ""}`}
+          className={`icon ${activeSection === "projectListPage" ? "active" : ""}`}
           onClick={(e) => {
             e.preventDefault();
             scrollToSection(projectListRef);
@@ -64,8 +95,7 @@ function Pages() {
           <AssignmentIcon />
         </a>
         <a
-          href="#imageGallaryPage"
-          className={`icon ${activeSection === "third" ? "active" : ""}`}
+          className={`icon ${activeSection === "imageGalleryPage" ? "active" : ""}`}
           onClick={(e) => {
             e.preventDefault();
             scrollToSection(imageGalleryRef);
@@ -74,11 +104,10 @@ function Pages() {
           <PaletteIcon />
         </a>
         <a
-          href="#footerPage"
-          className={`icon ${activeSection === "third" ? "active" : ""}`}
+          className={`icon ${activeSection === "footerPage" ? "active" : ""}`}
           onClick={(e) => {
             e.preventDefault();
-            scrollToSection(footerPage);
+            scrollToSection(footerRef);
           }}
         >
           <ContactPageIcon />
@@ -95,10 +124,10 @@ function Pages() {
       <div id="projectListPage" ref={projectListRef}>
         <ProjectListPage />
       </div>
-      <div id="imageGallaryPage" ref={imageGalleryRef}>
+      <div id="imageGalleryPage" ref={imageGalleryRef}>
         <ImagegalleryPage />
       </div>
-      <div id="footerPage" ref={footerPage}>
+      <div id="footerPage" ref={footerRef}>
         <FooterPage />
       </div>
     </div>
