@@ -36,19 +36,55 @@
     font-size: 10vw !important;
 }
 
+.devtext {
+    display: flex;
+    justify-content: end;
+    position: relative; /* Allows the div to be moved relative to its normal position */
+    bottom: 4vw; 
+    margin-right: 2vw;
+    gap: 2vw;
+}
+
+.devtext > p:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.devtext > p:last-child {
+    font-size: 1.2rem;
+}
+
 
 @media screen and (min-width: 1800px) {
     .footer-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: stretch;
         padding: 20vw 10vw 0vw 10vw;
         margin-bottom: 14vw;
-    
+        gap:15vw;
     }
     .footer-text {
     font-size: 4rem;
     
+    }
+
+    .devtext {
+        display: flex;
+        justify-content: end;
+        position: relative; /* Allows the div to be moved relative to its normal position */
+        bottom: 4vw; 
+        margin-right: 2vw;
+        gap: 1vw;
+    }
+    
+    .devtext > p:first-child {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .devtext > p:last-child {
+        font-size: 1.2rem;
     }
     
   }

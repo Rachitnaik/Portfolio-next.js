@@ -68,49 +68,45 @@ function Pages() {
     <div>
       <div className="sidebar">
         <a
-          className={`icon ${activeSection === "landingPage" ? "active" : ""}`}
           onClick={(e) => {
             e.preventDefault();
             scrollToSection(firstRef);
           }}
         >
-          <HomeIcon />
+          <HomeIcon className={`icon ${activeSection === "landingPage" ? "active" : ""}`} />
         </a>
         <a
-          className={`icon ${activeSection === "aboutMePage" ? "active" : ""}`}
           onClick={(e) => {
             e.preventDefault();
             scrollToSection(secondRef);
           }}
         >
-          <AccountCircleIcon />
+          <AccountCircleIcon className={`icon ${activeSection === "aboutMePage" ? "active" : ""}`} />
         </a>
         <a
-          className={`icon ${activeSection === "projectListPage" ? "active" : ""}`}
           onClick={(e) => {
             e.preventDefault();
             scrollToSection(projectListRef);
           }}
         >
-          <AssignmentIcon />
+          <AssignmentIcon className={`icon ${activeSection === "projectListPage" ? "active" : ""}`} />
         </a>
         <a
-          className={`icon ${activeSection === "imageGalleryPage" ? "active" : ""}`}
           onClick={(e) => {
             e.preventDefault();
             scrollToSection(imageGalleryRef);
           }}
         >
-          <PaletteIcon />
+          <PaletteIcon className={`icon ${activeSection === "imageGalleryPage" ? "active" : ""}`} />
         </a>
         <a
-          className={`icon ${activeSection === "footerPage" ? "active" : ""}`}
+
           onClick={(e) => {
             e.preventDefault();
             scrollToSection(footerRef);
           }}
         >
-          <ContactPageIcon />
+          <ContactPageIcon className={`icon ${activeSection === "footerPage" ? "active" : ""}`} />
         </a>
       </div>
 
