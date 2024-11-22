@@ -2,7 +2,7 @@
 
 .sidebar {
     position: fixed;
-    top: 25%;
+    top: 22%;
     left: 3vw;
     width: 4vw;
     background-color: #2d6b47;
@@ -16,7 +16,7 @@
 }
 
 .icon{
-    font-size: 4vh;
+    font-size: 4vh !important;
     color: white;
 }
 
@@ -37,5 +37,8 @@
 }
 
 @media screen and (min-width: 1800px) {
- 
+.sidebar{
+    height: 65vh;
+
+}
   }
