@@ -78,3 +78,53 @@
         
     }
   }
+
+@media screen and (max-width: 768px) {
+    .secondPage {
+        flex-direction: column-reverse; 
+        padding: 2vw 4vw 3vw 4vw; 
+        gap: 2rem;
+  }
+
+    .textSection {
+        display: flex;
+        flex-direction: column; /* Align elements horizontally */
+
+    }
+
+    .pageNumber {
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-align: right;
+        margin: 0; /* Remove margins */
+        position: relative;
+        top: 11vw;
+
+    }
+
+    .heading {
+        font-size: 2rem; /* Adjust heading size */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 1rem;
+        /* padding: 0vw 0vw 0 27vw; */
+
+    }
+
+    .description {
+        font-size: 1rem;
+        margin-left: 0; /* Remove left margin */
+        padding: 0 1vw;
+    }
+
+    .imageSection {
+        margin-left: 0; 
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+    }
+
+    .profileImage {
+        width:95vw; /* Scale the image for smaller screens */
+        height: 55vh; /* Maintain aspect ratio */
+    }
+}

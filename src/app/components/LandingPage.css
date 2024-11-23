@@ -45,3 +45,30 @@ margin-left: 10vw;
     }
     
   }
+
+  /* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .mainDiv {
+        flex-direction: column; /* Stack the text and image vertically */
+        gap: 2rem; /* Reduce the gap */
+        padding: 2rem; /* Adjust padding for mobile */
+        height: 100vh; /* Allow content to determine height */
+    }
+
+    .nameSection h1 {
+        font-size: 10vh; /* Reduce font size */
+        text-align: center; /* Center-align the text */
+        width: 100%; /* Make the text take full width */
+    }
+
+    .imageCss {
+        margin-left: 0; /* Remove margin for image section */
+        display: flex;
+        justify-content: center; /* Center the image */
+    }
+
+    .imageCss img {
+        width: 100vw; /* Scale the image for smaller screens */
+        height: 40vh; /* Maintain aspect ratio */
+    }
+}
