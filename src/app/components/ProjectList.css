@@ -134,8 +134,6 @@ justify-content: center;
     .mobile-cards-container{
       display: block;
       margin-left: 10vw;
-margin-top: 4vw;
-padding-bottom: 39vw;
 
     }
 
@@ -155,7 +153,6 @@ padding-bottom: 39vw;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 50vh; /* Set a fixed height */
     overflow: hidden; 
- 
   }
   
   .swiper-pagination-bullet {
@@ -183,10 +180,6 @@ padding-bottom: 39vw;
 }
 .section-title{
   margin-left: -5vw;
-}
-.projects-section {
-  padding: 40vw 0vw 2vw 10vw; /* Increased padding for mobile screens */
-
 }
 
 }
