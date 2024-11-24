@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay, Pagination } from "swiper/modules";
+import React, { useState, useEffect } from "react";
 
 const ImagegalleryPage: React.FC = () => {
     const images = [
@@ -16,7 +17,25 @@ const ImagegalleryPage: React.FC = () => {
         "gallery5.png",
     ];
 
-    const isMobile = window.innerWidth <= 768;
+    const [isMobile, setIsMobile] = useState<boolean>(false);
+
+    useEffect(() => {
+        // Set the state to true if the window width is <= 768px
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        // Check the screen width initially
+        checkMobile();
+
+        // Add a listener to check the width when the window is resized
+        window.addEventListener("resize", checkMobile);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+            window.removeEventListener("resize", checkMobile);
+        };
+    }, []);
 
     return (
         <>
