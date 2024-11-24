@@ -58,3 +58,41 @@ font-size: 1.7rem;
     
      }
   }
+
+
+  @media screen and (max-width: 768px) {
+    .image-gallery-marquee {
+        width: 100vw;
+        height: auto;
+        padding: 9vw 2vw 2vw 2vw;
+        border-radius: 10px;
+
+    }
+    .marquee-image {
+        height: 150vw; 
+        width: 90vw;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #666;
+        opacity: 0;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #000;
+    }
+
+    .image-gallery-header {
+      gap: 35vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 80vw;
+      margin-right: 3vw;
+      padding-top: 25vw;
+    }
+
+
+}

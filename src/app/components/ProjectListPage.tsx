@@ -35,7 +35,7 @@ const ProjectListPage: React.FC = () => {
         <>
             <div className="projects-section " >
                 <div className="section-header poppins ">
-                    <h2 className="section-number">02</h2>
+                    <h2 className="section-number ">02</h2>
                     <h2 className="section-title ">Projects</h2>
                 </div>
                 <div className="project-cards-container">
@@ -64,17 +64,20 @@ const ProjectListPage: React.FC = () => {
                     modules={[Pagination]}
                     pagination={{ clickable: true }}
                     spaceBetween={10}
-                    slidesPerView={1}
-                    breakpoints={{
-                        768: { slidesPerView: 2 }, // Show 2 slides for tablets and up
-                        1024: { slidesPerView: 3 }, // Show 3 slides for desktops
+                    slidesPerView={1} style={{
+                        marginRight: "45px",
+
                     }}
+                // breakpoints={{
+                //     768: { slidesPerView: 1 }, // Show 2 slides for tablets and up
+                //     // 1024: { slidesPerView: 3 }, // Show 3 slides for desktops
+                // }}
                 >
                     {projects.map((project, index) => (
                         <SwiperSlide key={index}>
                             <div className="project-card">
                                 <div className="project-header poppins">
-                                    <h3 className="project-title">{project.title}</h3>
+                                    <h3 className="project-title poppins">{project.title}</h3>
                                     <a
                                         href={project.link}
                                         target="_blank"
