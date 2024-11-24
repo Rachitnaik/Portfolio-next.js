@@ -134,11 +134,14 @@ justify-content: center;
     .mobile-cards-container{
       display: block;
       margin-left: 10vw;
+margin-top: 4vw;
+padding-bottom: 39vw;
+
     }
 
     .project-cards-container {
       display: none;
-      padding: 40px;
+
     }
   
   .project-card {
@@ -152,6 +155,7 @@ justify-content: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 50vh; /* Set a fixed height */
     overflow: hidden; 
+ 
   }
   
   .swiper-pagination-bullet {
@@ -175,6 +179,13 @@ justify-content: center;
 
 .section-number {
     font-size: 1.8rem;
+
+}
+.section-title{
+  margin-left: -5vw;
+}
+.projects-section {
+  padding: 40vw 0vw 2vw 10vw; /* Increased padding for mobile screens */
 
 }
 
