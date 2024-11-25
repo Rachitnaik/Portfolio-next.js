@@ -37,6 +37,10 @@
 .footer-icon{
     font-size: 10vw !important;
 }
+.arrow{
+    font-size: 4vw !important;
+    margin-bottom: 1vw;
+}
 
 .devtext {
     display: flex;
@@ -56,9 +60,6 @@
     font-size: 1.2rem;
 }
 
-.footer-title::after {
-    content: " ➚";  /* Default arrow */
-}
 
 
 
@@ -97,10 +98,7 @@
         font-size: 1.2rem;
     }
 
-    .footer-title::after {
-        content: " ➚";  /* Default arrow */
-    }
-    
+
   
   }
 
@@ -135,9 +133,11 @@
     .footer-mail{
         font-size: 1.2rem;
     }
-    .footer-title::after {
-        content: " ↙";  /* Change to South-West arrow on mobile */
+    .arrow{
+        font-size: 3rem !important;
     }
+    
+
 }
 
 
@@ -172,10 +172,10 @@
         font-size: 1.5rem; /* Increase font size for better readability on tablets */
     }
 
-    .footer-title::after {
-        content: " ↙";  /* Keep the South-West arrow for tablets */
+    .arrow{
+        font-size: 3rem !important;
     }
-
+    
 
     
 }
