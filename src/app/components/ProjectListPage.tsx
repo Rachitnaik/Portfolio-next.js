@@ -28,21 +28,22 @@ const projects = [
     {
         title: "AniView",
         description:
-            "A reviewing web application for Anime and Manga, a group mini project done during my university days, using react, react-bootstrap, firestore for database. Was mainly involved in creating UI screens and basic testing, and also involved in requirement analysis",
+            "Contributed to the development of a reviewing web application for Anime and Manga as part of a group mini project during university. The application was built using React, React-Bootstrap, and Firestore for the database. Responsibilities included designing and implementing user interface screens, performing basic testing, and collaborating in requirement analysis to ensure alignment with project goals.",
         link: "http://aniview.onrender.com",
     },
     {
         title: "Anime/MangaUI",
         description:
-            "A UI made by following a design from the Internet, during my internship as a part of my learning phase using react, typescript, material UI, used an online free API to display data.",
+            "Developed a user interface as part of an internship project, following a design sourced from the internet, using React, TypeScript, and Material UI. Integrated data from a publicly available free API to dynamically display content.",
         link: "https://github.com/Rachitnaik/AnimeUI",
     },
     {
         title: "Movify-React App",
         description:
-            "A basic react application done to understand the flow of a full-stack application, during my internship period using MERN stack.",
+            "Developed a foundational React application during an internship to gain a comprehensive understanding of the flow in a full-stack application, utilizing the MERN stack (MongoDB, Express, React, Node.js).",
         link: "https://github.com/Rachitnaik/Moviefy",
     },
+
 ];
 
 const ProjectListPage: React.FC = () => {

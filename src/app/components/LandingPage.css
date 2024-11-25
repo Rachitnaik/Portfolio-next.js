@@ -33,7 +33,7 @@
 
 /* Image section styling */
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1700px) {
     .mainDiv {
         gap:19vw;
         padding: 5rem 2rem 10rem 0rem;
@@ -70,4 +70,35 @@ margin-left: 10vw;
         width: 100vw; /* Scale the image for smaller screens */
         height: 40vh; /* Maintain aspect ratio */
     }
+}
+
+
+/* For tablets screens (768px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .mainDiv {
+        flex-direction: row; /* Keep text and image side by side */
+        gap: 3rem; /* Slightly larger gap for tablet */
+        padding: 3rem; /* Adjust padding for tablet */
+        height: auto; /* Allow content to determine height */
+    }
+
+    .nameSection h1 {
+        font-size: 8vh; /* Moderate font size */
+        text-align: left; /* Align text to the left */
+        width: auto; /* Text takes natural width */
+    }
+
+    .imageCss {
+        margin-left: 0; /* No margin */
+        display: flex;
+        justify-content: center; /* Keep image centered */
+    }
+
+    .imageCss img {
+        width: 50vw; /* Scale the image appropriately for tablet screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+
+    
 }

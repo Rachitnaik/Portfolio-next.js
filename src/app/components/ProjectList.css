@@ -89,7 +89,7 @@ justify-content: center;
     -ms-overflow-style: none; /* For Internet Explorer 10+ */
   }
   
-  @media screen and (min-width: 1800px) {
+  @media screen and (min-width: 1700px) {
     .mobile-cards-container{
       display: none;
     }

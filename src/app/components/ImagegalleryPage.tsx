@@ -74,7 +74,7 @@ const ImagegalleryPage: React.FC = () => {
                             ))}
                         </Swiper>
                     ) : (
-                        <Marquee speed={120} autoFill pauseOnClick pauseOnHover>
+                        <Marquee speed={180} autoFill pauseOnClick pauseOnHover>
                             {images.map((src, index) => (
                                 <Image
                                     key={index}

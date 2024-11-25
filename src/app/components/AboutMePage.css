@@ -51,7 +51,7 @@
 }
 
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1700px) {
     .secondPage {
         display: flex;
         flex-direction: row;
@@ -122,5 +122,51 @@
     .profileImage {
         width:84vw; /* Scale the image for smaller screens */
         height: 55vh; /* Maintain aspect ratio */
+    }
+}
+
+/* For tablet screens (768px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Tablet screens */
+    .secondPage {
+        flex-direction: row; /* Arrange content side by side */
+        padding: 3vw 5vw; /* Adjust padding for tablets */
+        gap: 3rem; /* Slightly larger gap */
+    }
+
+    .textSection {
+        display: flex;
+        flex-direction: column; /* Align text section vertically */
+        width: 45vw; /* Adjust width for tablet */
+    }
+
+    .pageNumber {
+        font-size: 2rem; /* Increase font size for tablet */
+        position: relative;
+        top: 4vw;
+        margin-right: 4vw;
+    }
+
+    .heading {
+        font-size: 2.5rem; /* Larger heading for tablet */
+        margin-left: 1.5vw; /* Slight margin left */
+        margin-bottom: 1rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        margin-left: 0;
+        padding: 0 3vw;
+    }
+
+    .imageSection {
+        margin-left: 0; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .profileImage {
+        width: 60vw; /* Scale the image for tablet */
+        height: 25vh; /* Maintain aspect ratio */
     }
 }

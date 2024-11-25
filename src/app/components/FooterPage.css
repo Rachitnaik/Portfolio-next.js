@@ -62,7 +62,7 @@
 
 
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1700px) {
     .footer-container {
         display: flex;
         justify-content: center;
@@ -109,7 +109,7 @@
     .footer-container {
         flex-direction: column; /* Stack the elements vertically */
         align-items: center; /* Center align the content */
-        padding: 10vw 5vw; /* Adjust padding for mobile */
+        padding: 19vw 5vw; /* Adjust padding for mobile */
     }
 
     .footer-icons-wrapper {
@@ -138,4 +138,44 @@
     .footer-title::after {
         content: " ↙";  /* Change to South-West arrow on mobile */
     }
+}
+
+
+/* For tablet screens (768px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Tablet screens */
+    .footer-container {
+        flex-direction: row; /* Arrange elements in a row for tablets */
+        align-items: center; /* Center align the content */
+        padding: 15vw 1vw 17vw 5vw; /* Adjust padding for tablet */
+    }
+
+    .footer-icons-wrapper {
+        margin-top: 0; /* Remove margin for tablet */
+        margin-left: 2vw; /* Add slight margin left */
+    }
+
+    .footer-text {
+        margin-left: 1vw; /* Adjust margin for better alignment */
+        margin-bottom: 2vw;
+    }
+
+    .footer-title {
+        font-size: 2.5rem !important; /* Slightly smaller title for tablet */
+    }
+
+    .footer-icon {
+        font-size: 5rem !important; /* Slightly smaller icons */
+    }
+
+    .footer-mail {
+        font-size: 1.5rem; /* Increase font size for better readability on tablets */
+    }
+
+    .footer-title::after {
+        content: " ↙";  /* Keep the South-West arrow for tablets */
+    }
+
+
+    
 }
