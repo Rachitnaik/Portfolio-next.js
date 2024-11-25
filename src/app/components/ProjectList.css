@@ -12,10 +12,12 @@
     align-items: center;
 
   }
+  .mobile-cards-container{
+    display: none;
+  }
   
   .section-number {
     font-size: 1.5rem;
-    font-weight: bold;
   }
   
   .section-title {
@@ -87,9 +89,10 @@ justify-content: center;
     -ms-overflow-style: none; /* For Internet Explorer 10+ */
   }
   
-
-
-  @media screen and (min-width: 1800px) {
+  @media screen and (min-width: 1700px) {
+    .mobile-cards-container{
+      display: none;
+    }
     .projects-section {
       font-family: "Arial", sans-serif;
       color: #333;
@@ -124,3 +127,58 @@ justify-content: center;
   
     }
   }
+
+
+  @media screen and (max-width: 768px) {
+
+    .mobile-cards-container{
+      display: block;
+      margin-left: 10vw;
+
+    }
+
+    .project-cards-container {
+      display: none;
+
+    }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 50vh; /* Set a fixed height */
+    overflow: hidden; 
+  }
+  
+  .swiper-pagination-bullet {
+      /* background-color: #666;
+      opacity: 1; */
+
+  }
+  
+  .swiper-pagination-bullet-active {
+      background-color: #000;
+  }
+
+  .section-header {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    padding: 0 1vw; /* Add padding for spacing */
+    gap: 49vw; /* Add spacing between the number and title */
+}
+
+.section-number {
+    font-size: 1.8rem;
+
+}
+.section-title{
+  margin-left: -5vw;
+}
+
+}

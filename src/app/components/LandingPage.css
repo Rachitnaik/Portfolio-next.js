@@ -7,8 +7,7 @@
     align-items: center;
     padding: 7rem 0rem 10rem 4rem;
     height: 100vh;
-    /* border: 2px solid; */
-    /* background-color: #CB6E17; */
+
 
 }
 
@@ -34,7 +33,7 @@
 
 /* Image section styling */
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1700px) {
     .mainDiv {
         gap:19vw;
         padding: 5rem 2rem 10rem 0rem;
@@ -45,3 +44,61 @@ margin-left: 10vw;
     }
     
   }
+
+  /* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .mainDiv {
+        flex-direction: column; /* Stack the text and image vertically */
+        gap: 2rem; /* Reduce the gap */
+        padding: 2rem; /* Adjust padding for mobile */
+        height: 100vh; /* Allow content to determine height */
+    }
+
+    .nameSection h1 {
+        font-size: 10vh; /* Reduce font size */
+        text-align: center; /* Center-align the text */
+        width: 100%; /* Make the text take full width */
+    }
+
+    .imageCss {
+        margin-left: 0; /* Remove margin for image section */
+        display: flex;
+        justify-content: center; /* Center the image */
+    }
+
+    .imageCss img {
+        width: 100vw; /* Scale the image for smaller screens */
+        height: 40vh; /* Maintain aspect ratio */
+    }
+}
+
+
+/* For tablets screens (768px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .mainDiv {
+        flex-direction: row; /* Keep text and image side by side */
+        gap: 3rem; /* Slightly larger gap for tablet */
+        padding: 3rem; /* Adjust padding for tablet */
+        height: auto; /* Allow content to determine height */
+    }
+
+    .nameSection h1 {
+        font-size: 8vh; /* Moderate font size */
+        text-align: left; /* Align text to the left */
+        width: auto; /* Text takes natural width */
+    }
+
+    .imageCss {
+        margin-left: 0; /* No margin */
+        display: flex;
+        justify-content: center; /* Keep image centered */
+    }
+
+    .imageCss img {
+        width: 50vw; /* Scale the image appropriately for tablet screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+
+    
+}

@@ -11,10 +11,6 @@ const LandingPage: React.FC = () => {
                 <h1 className="satisfy">
                     Rachit <br /> Naik <br /> Gaunkar
                 </h1>
-
-                {/* <p className="tagline">
-                    Illustrating Dreams, One Sketch at a Time.
-                </p> */}
             </div>
 
             {/* Illustration Section */}

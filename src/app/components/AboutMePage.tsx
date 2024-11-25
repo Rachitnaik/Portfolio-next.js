@@ -22,10 +22,7 @@ const AboutMePage: React.FC = () => {
                 <div className="pageNumber poppins">01</div>
                 <h1 className="heading poppins">Me?</h1>
                 <p className="description poppins">
-                    Nature's Finest, an organic skincare brand, sought an earthy and
-                    natural brand identity. We crafted a logo with a leaf-inspired
-                    design, utilizing soft and soothing colors that reflect the brand's
-                    commitment to organic ingredients.jdfvjfdbvhfdbvfdlbvjxbvjcjxc;kkvdfvjfdkvjfhv;jvhfvljzfvdzfvbijfdbvi
+                    I'm a passionate web developer with a keen focus on front-end technologies. When I'm not coding, I dive into the world of illustrations, turning images into vibrant visuals. My journey blends creativity and technical expertise, allowing me to bring both functional and artistic elements to life.
                 </p>
             </div>
         </div>

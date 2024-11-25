@@ -11,7 +11,7 @@ const FooterPage: React.FC = () => {
             <div className="footer-container poppins" >
                 <div className="footer-text" >
                     <p className="footer-number poppins">4</p>
-                    <p className="footer-title poppins">Get in touch   ➚  </p>
+                    <p className="footer-title poppins">Get in touch    </p>
 
                 </div>
 
@@ -24,9 +24,7 @@ const FooterPage: React.FC = () => {
                             <LinkedInIcon className="footer-icon" />
                         </a>
                     </div>
-                    <div className="poppins" style={{
-                        fontSize: "1.5rem"
-                    }}> <p >Mail me : rachitgaunkar@gmail.com</p>
+                    <div className="poppins footer-mail" > <p >Mail to : rachitgaunkar@gmail.com</p>
 
                     </div>
 

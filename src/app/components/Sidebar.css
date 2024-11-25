@@ -36,9 +36,28 @@
     color: orange; /* Highlight the active section */
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1700px) {
 .sidebar{
     height: 65vh;
 
 }
   }
+
+  /* Media query for mobile screens */
+@media screen and (max-width: 768px)  {
+
+    .sidebar{
+       display: none;
+    
+    }
+  
+}
+
+/* For tablet screens (768px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Tablet screens */
+    .sidebar{
+        display: none;
+     
+     }
+}
