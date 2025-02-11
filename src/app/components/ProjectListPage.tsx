@@ -61,6 +61,16 @@ const ProjectListPage: React.FC = () => {
                         <ProjectCard key={index} project={project} />
                     ))}
                 </div>
+                <div className="see-more-container-desktop">
+                    <a
+                        href="https://github.com/Rachitnaik"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="see-more-button"
+                    >
+                        See More   ➚
+                    </a>
+                </div>
             </div>
 
             {/* Mobile Section */}
@@ -78,7 +88,20 @@ const ProjectListPage: React.FC = () => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
+                <div className="see-more-container">
+                    <a
+                        href="https://github.com/Rachitnaik"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="see-more-button"
+                    >
+                        See More   ➚
+                    </a>
+                </div>
             </div>
+
+
+
         </>
     );
 };
