@@ -38,10 +38,10 @@ const projects = [
         link: "https://github.com/Rachitnaik/AnimeUI",
     },
     {
-        title: "Movify-React App",
+        title: "Clothing Brand E-commerce Platform",
         description:
-            "Developed a foundational React application during an internship to gain a comprehensive understanding of the flow in a full-stack application, utilizing the MERN stack (MongoDB, Express, React, Node.js).",
-        link: "https://github.com/Rachitnaik/Moviefy",
+            "Built the homepage for a clothing brand e-commerce site, Frontend deployed on Vercel; Backend on Render, Used PostgreSQL (Aiven) for data and Sanity CMS for content management,Currently a work in progress, with one fully detailed product and a functional product page ",
+        link: "https://github.com/Rachitnaik/E-commerce",
     },
 
 ];
