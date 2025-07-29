@@ -31,7 +31,7 @@ const FooterPage: React.FC = () => {
                             <GitHubIcon className="footer-icon" />
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/rachitnaikgaunkar/"
+                            href="https://www.linkedin.com/in/rachit-naik-gaunkar-47622424b/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

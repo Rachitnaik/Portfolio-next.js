@@ -22,6 +22,7 @@
     margin: 0;
     font-family: 'Satisfy', cursive;
     width: 20rem;
+    
 }
 
 /* Optional tagline styling */
@@ -101,4 +102,15 @@ margin-left: 10vw;
 
 
     
+}
+
+@media screen and (min-width: 1400px) {
+  .mainDiv {
+    gap: 15vw;
+    padding-right: 5vw;
+  }
+
+  .imageCss {
+    margin-left: 5vw;
+  }
 }
