@@ -18,19 +18,21 @@
     padding-left: 3vw;
 }
 
- .more{
-padding-top: 2vw;
-font-size: 1.7rem;
-
-
- }
-
-.image-gallery-marquee {
-    width: 75vw;
-    height: 30vw;
-    margin-left: 50px;
+.more {
+  padding-top: 2vw;
+  font-size: 1.7rem;
+  margin-top: 2rem; /* Ensures it stays clearly below the gallery */
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
 }
-
+.image-gallery-marquee {
+  width: 75vw;
+  height: 30vw;
+  margin-left: 50px;
+  margin-bottom: 2rem; /* space below gallery */
+}
 .marquee-image {
     height: 70vh;
     padding: 1rem;
